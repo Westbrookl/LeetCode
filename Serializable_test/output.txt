@@ -1,0 +1,1 @@
+﻿ t stringsr model.Personc]軨? I ageL mant Lmodel/Man;L usernamet Ljava/lang/String;xp   sr 	model.Man絲?枻ij L nameq ~ L passwordq ~ xpt jhct 123456t wz

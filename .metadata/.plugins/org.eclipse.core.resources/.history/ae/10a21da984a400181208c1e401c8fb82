@@ -1,0 +1,23 @@
+
+public class Suolution {
+	public int myAoti(String s){
+		int result=0;
+		int length = s.length();
+		String temp;
+		for(int i=0;i<length;i++){
+			if(s.charAt(i) == ' '){
+				continue;
+			}else{
+				temp = s.substring(i, length);
+				break;
+			}
+		}
+		if(temp.charAt(0) == '+' || temp.charAt(0) == '-'){
+			for()
+		}else{
+			result = 0;
+		}
+		
+		return result;
+	}
+}

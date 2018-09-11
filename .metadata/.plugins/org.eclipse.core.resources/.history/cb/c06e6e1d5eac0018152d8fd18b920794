@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+public class Solution {
+	public static int threeSumClosest(int[] nums, int target){
+		int length = nums.length;
+		int res = 0;
+		if(length<3){
+			for(int i=0;i<length;i++){
+				res += nums[i];
+			}
+			return res;
+		}
+		Arrays.sort(nums);
+		int sum = nums[0]+nums[1]+nums[2];//初始化内容默认个内容
+		for(int i=0;i<length-2;i++){
+			int j= i+1;
+			int k = length-1;
+			int result = nums[i]+nums[j]+nums[k];
+			while(j<k){
+				if(Math.abs(sum - traget)< Math.abs( - target))
+			}
+		}
+		
+	}
+	public static void main(String[] args){
+		int[] nums = {-1,2,1,-4};
+		System.out.println(threeSumClosest(nums,1));
+	}
+}

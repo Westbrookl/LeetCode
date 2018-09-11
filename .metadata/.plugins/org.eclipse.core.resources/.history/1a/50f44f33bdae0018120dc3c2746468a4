@@ -1,0 +1,15 @@
+
+public class Soulution {
+	public static List<String>letterCombinations(String digts){
+		String[][] map = new String[][]{
+			{"a","b","c"},
+			{"d","e","f"},
+			{"g","h","i"},
+			{"j","k","l"},
+			{"m","n","o"},
+			{"p","q","r","s"},
+			{"t","u","v"},
+			{"w","x","y","z"}
+		}
+	}
+}
