@@ -1,0 +1,7 @@
+package aboutLinkedNode;
+
+public class Solution {
+	public ListNode removeNFromEnd(ListNode head,int n){
+		
+	}
+}

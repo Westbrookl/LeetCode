@@ -1,20 +1,30 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+/*
+ * 对于多个数求和的问题
+ * 去重的意思是把数组中可能重复出现的结果删除，实现的主要方法是比较，如果当前值和前面的一个值相等的话就直接跳过。
+ * 对于最后两个数的求值，则直接是利用循环判断然后输++
+ * 
+ * 这里一般都定义双指针的做法，双指针的做法可以使我们更快的遍历数组。
+ * 
+ * 
+ * 
+ * 
+ */
 public class Solution {
 	public static List<List<Integer>> fornum(int[] nums,int target){
 		int length = nums.length;
 		Arrays.sort(nums);
 		List<List<Integer>> result = new ArrayList<List<Integer>>();//初始化容器的问题
 		if(length<4){
-			List<Integer> temp = new ArrayList<Integer>();
+//			List<Integer> temp = new ArrayList<Integer>();
 			
 //			temp.addAll(Arrays.asList(nums)); addAll
-			for(int i=0;i<length;i++){
-				temp.add(nums[i]);
-			}
-			result.add((ArrayList<Integer>) temp);
+//			for(int i=0;i<length;i++){
+//				temp.add(nums[i]);
+//			}
+//			result.add((ArrayList<Integer>) temp);
 			return result;
 		}
 		for(int i=0;i<length-2;i++){
