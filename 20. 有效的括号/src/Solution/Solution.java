@@ -2,17 +2,17 @@ package Solution;
 
 import java.util.Stack;
 /*
- * ջ�ʺϽ������������������ƥ�䣬�����Ⱥ�˳�����ƥ�䡣�������Ľ���ѹջ��Ȼ�����ε�����
+ * 栈适合解决的问题是用来类型匹配，按照先后顺序进行匹配。先索引的进行压栈，然后依次弹出。
  * 
  * 
  * 
-����һ��ֻ���� '('��')'��'{'��'}'��'['��']' ���ַ������ж��ַ����Ƿ���Ч��
+给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
 
-��Ч�ַ��������㣺
+有效字符串需满足：
 
-�����ű�������ͬ���͵������űպϡ�
-�����ű�������ȷ��˳��պϡ�
-ע����ַ����ɱ���Ϊ����Ч�ַ���
+左括号必须用相同类型的右括号闭合。
+左括号必须以正确的顺序闭合。
+注意空字符串可被认为是有效字符串
  * 
  */
 public class Solution {
@@ -29,7 +29,7 @@ public class Solution {
 				return false;
 			}
 		}
-		return true;
+		return st.isEmpty();
 	}
 	public static void main(String[] args){
 		String s1 = "(){}[]";
