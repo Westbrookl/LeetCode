@@ -1,0 +1,21 @@
+package Solution;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+ * 
+ * 
+ * 
+ * 
+ */
+public class Solution {
+	public static List<String> generateParenthesis(int n){
+		List<String> res = new ArrayList<String>();
+		traceBack(res,"",n,n);
+		return res;
+	}
+	public static void traceBack(ArrayList res,String temp,int lef,int right){
+		
+	}
+}
