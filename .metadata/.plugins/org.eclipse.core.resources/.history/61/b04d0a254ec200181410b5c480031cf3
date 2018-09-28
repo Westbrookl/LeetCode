@@ -1,0 +1,38 @@
+
+public class Solution {
+	public static int divide(int dividend,int divisor){
+		if(Math.abs(dividend)<Math.abs(divisor)){
+			return 0;
+		}
+		if(divisor==0){
+			return 0;
+		}
+		boolean flag = false;
+		if(dividend <0 ){
+			flag = !flag;
+		}
+		if(divisor<0){
+			flag=!flag;
+		}
+		int count=0;
+		int abs1 = Math.abs(dividend);
+		int abs2 = Math.abs(divisor);
+		while(abs1 > abs2){
+			abs1 -= abs2;
+			count++;
+		}
+		if(count>Math.pow(2, 31)-1){
+			return (int)(Math.pow(2, 31)-1);
+		}
+		if(flag){
+			count = 0-count;
+		}
+		return count;
+	}
+	public static void main(String[] args){
+		int a = divide(-2147483648,-1);
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Math.abs(-1));
+		
+	}
+}

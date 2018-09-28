@@ -1,0 +1,17 @@
+class ListNode{
+	int value;
+	ListNode next;
+	public ListNode(int x){
+		this.value = x;
+	}
+}
+
+public class Solution {
+	 public ListNode mergeKLists(ListNode[] lists) {
+	        
+	    }
+	 
+	 public ListNode mergerTwoList(ListNode l1,ListNode l2){
+		 
+	 }
+}

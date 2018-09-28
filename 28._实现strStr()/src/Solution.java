@@ -1,0 +1,45 @@
+
+public class Solution {
+	public static int strStr(String heyStack,String needle){
+	    
+		if(needle==null || needle.trim().equals("")){
+			return 0;
+		}
+		if(heyStack.trim().length()<needle.trim().length()){
+			return -1;
+		}
+		int pos=0;
+//		char[] m = heyStack.toCharArray();
+//		char[] n = needle.toCharArray();
+		int m = heyStack.length();
+		int n = needle.length();
+		char target = needle.charAt(0);
+		for(int i=0;i<m-n+1;i++){
+			String temp = heyStack.substring(i, i+n);
+			if(temp.equals(needle)){
+				pos = i;
+				break;
+			}else if(i == m-n+1){
+				pos = -1;
+			}
+		}
+		
+		
+		
+//		for(int i=0;i<heyStacks.length;i++){
+//			if(heyStacks[i] == target){
+//				pos = i;
+//				break;
+//			}else if(i==heyStacks.length-1){
+//				pos = -1;
+//			}
+//		}
+		return pos;
+	}
+	public static void main(String[] args){
+		String s1 = "aaaaa";
+		String s2 = "baa";
+		System.out.println(strStr(s1,s2));
+		
+	}
+}

@@ -1,0 +1,35 @@
+
+public class Solution {
+	public static int divide(int dividend,int divisor){
+		if(Math.abs(dividend)<Math.abs(divisor)){
+			return 0;
+		}
+		if(divisor==0){
+			return 0;
+		}
+		boolean flag = false;
+		if(dividend <0 ){
+			flag = !flag;
+		}
+		if(divisor<0){
+			flag=!flag;
+		}
+		int count=0;
+		int abs1 = Math.abs(dividend);
+		int abs2 = Math.abs(divisor);
+		while(abs1>0){
+			abs1 -= abs2;
+			count++;
+		}
+		if(flag){
+			count = 0-count;
+		}
+		return count;
+	}
+	public static void main(String[] args){
+		int a = divide(10,3);
+		int b = divide(7,-3);
+		System.out.println(a);
+		System.out.println(b);
+	}
+}
